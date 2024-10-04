@@ -89,4 +89,108 @@ input::placeholder {
   padding: 20px; /* Padding for the container */
 }
 
-/* Keep existing styles */
+/* src/App.css */
+
+/* Overall app styles */
+.app {
+  min-height: 100vh; /* Ensure full height */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  color: white; /* Set text color to white for contrast */
+}
+
+/* Tab Container */
+.tab-container {
+  display: flex;
+  justify-content: center; /* Center the tabs */
+  margin-bottom: 20px; /* Spacing below the tabs */
+}
+
+/* Individual Tab Button */
+.tab-container button {
+  background-color: rgba(30, 30, 30, 0.8); /* Dark transparent background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for buttons */
+  margin: 0 5px; /* Margin between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Hover Effect for Tabs */
+.tab-container button:hover {
+  background-color: rgba(51, 51, 51, 0.9); /* Darker on hover */
+}
+
+/* Tab Content Area */
+
+
+/* src/App.css */
+
+/* Overall app styles */
+.app {
+  min-height: 100vh; /* Ensure full height */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  color: white; /* Set text color to white for contrast */
+}
+
+/* Neon Title Styles */
+.neon-title {
+  font-size: 64px; /* Larger font size for title */
+  color: #ff007f; /* Neon pink color */
+  text-shadow: 
+    0 0 5px #ff007f, /* Neon pink glow */
+    0 0 10px #ff007f,
+    0 0 15px #ff007f,
+    0 0 20px #ff007f;
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Neon Clock Styles */
+.neon-text {
+  font-size: 48px; /* Larger font size */
+  color: #39ff14; /* Neon green color */
+  text-shadow: 
+    0 0 5px #39ff14, /* Neon green glow */
+    0 0 10px #39ff14,
+    0 0 15px #39ff14,
+    0 0 20px #39ff14;
+  margin: 20px 0; /* Spacing above and below */
+}
+
+/* Tab Container */
+.tab-container {
+  display: flex;
+  justify-content: center; /* Center the tabs */
+  margin-bottom: 20px; /* Spacing below the tabs */
+}
+
+/* Individual Tab Button */
+.tab-container button {
+  background-color: rgba(30, 30, 30, 0.8); /* Dark transparent background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for buttons */
+  margin: 0 5px; /* Margin between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Hover Effect for Tabs */
+.tab-container button:hover {
+  background-color: rgba(51, 51, 51, 0.9); /* Darker on hover */
+}
+
+/* Tab Content Area */
+.tab-content {
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center; /* Center content */
+  height: 300px; /* Fixed height for content area */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  background-color: rgba(30, 30, 30, 0.7); /* Semi-transparent background */
+}
