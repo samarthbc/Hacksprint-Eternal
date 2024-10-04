@@ -140,11 +140,11 @@ input::placeholder {
 .neon-title {
   font-size: 64px; /* Larger font size for title */
   color: #ff007f; /* Neon pink color */
-  text-shadow: 
-    0 0 5px #ff007f, /* Neon pink glow */
+  /* text-shadow: 
+    0 0 5px #ff007f, 
     0 0 10px #ff007f,
     0 0 15px #ff007f,
-    0 0 20px #ff007f;
+    0 0 20px #ff007f; */
   margin-bottom: 20px; /* Space below the title */
 }
 
@@ -152,11 +152,11 @@ input::placeholder {
 .neon-text {
   font-size: 48px; /* Larger font size */
   color: #39ff14; /* Neon green color */
-  text-shadow: 
-    0 0 5px #39ff14, /* Neon green glow */
+  /* text-shadow: 
+    0 0 5px #39ff14, 
     0 0 10px #39ff14,
     0 0 15px #39ff14,
-    0 0 20px #39ff14;
+    0 0 20px #39ff14; */
   margin: 20px 0; /* Spacing above and below */
 }
 
@@ -193,4 +193,215 @@ input::placeholder {
   border-radius: 10px; /* Rounded corners */
   padding: 20px;
   background-color: rgba(30, 30, 30, 0.7); /* Semi-transparent background */
+}
+
+/* src/App.css */
+
+/* World clock list styles */
+.world-clock-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.world-clock-list li {
+  margin: 10px 0; /* Space between each country */
+  font-size: 18px; /* Adjust font size */
+  color: #fff; /* Text color */
+}
+/* src/App.css */
+
+/* Tab container styles */
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space below the tabs */
+}
+
+.tab-container button {
+  margin: 0 10px; /* Space between buttons */
+  padding: 10px 15px; /* Button padding */
+  font-size: 16px; /* Font size for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #444; /* Button background color */
+  color: #fff; /* Button text color */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.tab-container button:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* src/App.css */
+
+/* To-Do list styles */
+.todo-input {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  width: 200px; /* Width of the input */
+}
+
+.add-todo-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #444; /* Button background */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.add-todo-button:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+.todo-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.todo-list li {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between items */
+  margin: 10px 0; /* Space between to-do items */
+}
+
+.todo-list .completed {
+  text-decoration: line-through; /* Line through completed to-dos */
+  color: gray; /* Gray color for completed */
+}
+
+.todo-list button {
+  margin-left: 10px; /* Space between text and button */
+  background-color: red; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* src/App.css */
+
+/* Current date styles */
+.date-text {
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Space below the date */
+  color: #fff; /* Text color */
+  font-size: 24px; /* Font size */
+}
+
+/* src/App.css */
+
+/* Box container styles */
+.box-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space the boxes evenly */
+  margin: 20px 0; /* Space above and below the container */
+}
+
+/* Individual box styles */
+.box {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  border: 1px solid #fff; /* White border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  width: 100px; /* Width of the box */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.box:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Lighten background on hover */
+}
+
+/* src/components/TodoList.css */
+
+.todo-list {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+  border: 1px solid #fff; /* White border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the component */
+  margin: 20px 0; /* Margin above and below */
+}
+
+.todo-list h2 {
+  color: #fff; /* Title color */
+}
+
+.todo-list form {
+  display: flex; /* Flexbox for form layout */
+  flex-direction: column; /* Stack inputs vertically */
+  margin-bottom: 10px; /* Space below form */
+}
+
+.todo-list input {
+  margin: 5px 0; /* Margin for inputs */
+  padding: 10px; /* Padding inside inputs */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #fff; /* White border */
+}
+
+.todo-list button {
+  padding: 10px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.todo-list button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.todo-list ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.todo-list li {
+  color: #fff; /* Task text color */
+  margin: 5px 0; /* Margin for tasks */
+}
+
+/* src/components/Stopwatch.css */
+
+.stopwatch {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+  border: 1px solid #fff; /* White border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the component */
+  text-align: center; /* Center the text */
+}
+
+.stopwatch h2 {
+  color: #fff; /* Title color */
+}
+
+.time-display {
+  font-size: 48px; /* Large font size for the time display */
+  color: #fff; /* Time color */
+  margin: 20px 0; /* Space around the time display */
+}
+
+.buttons {
+  display: flex; /* Use flexbox for button layout */
+  justify-content: center; /* Center buttons */
+}
+
+.buttons button {
+  margin: 0 5px; /* Space between buttons */
+  padding: 10px 20px; /* Padding for buttons */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.buttons button:hover {
+  background-color: #45a049; /* Darker green on hover */
 }

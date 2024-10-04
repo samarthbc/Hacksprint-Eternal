@@ -1,25 +1,44 @@
 // src/components/Alarm.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Alarm = ({ currentTime }) => {
   const [hour, setHour] = useState(12);
   const [minute, setMinute] = useState(0);
   const [period, setPeriod] = useState('AM');
+  const [isAlarmSet, setIsAlarmSet] = useState(false);
+  const [alarmTime, setAlarmTime] = useState(null);
+  // const alarmSound = new Audio('https://www.soundjay.com/button/sounds/beep-07.wav'); // Sound URL
 
   const handleSetAlarm = () => {
-    const alarmTime = `${hour}:${minute < 10 ? `0${minute}` : minute} ${period}`;
-    alert(`Alarm set for ${alarmTime}`);
-    // Here you can implement additional logic to handle the alarm sound
+    const alarmTimeString = `${hour}:${minute < 10 ? `0${minute}` : minute} ${period}`;
+    setAlarmTime(alarmTimeString);
+    setIsAlarmSet(true);
+    alert(`Alarm set for ${alarmTimeString}`);
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const now = new Date();
+      const formattedTime = `${now.getHours() % 12 || 12}:${now.getMinutes() < 10 ? `0${now.getMinutes()}` : now.getMinutes()} ${now.getHours() < 12 ? 'AM' : 'PM'}`;
+      
+      if (isAlarmSet && formattedTime === alarmTime) {
+        // alarmSound.play(); // Play the alarm sound
+        alert('Alarm ringing!'); // Optionally, show an alert
+        setIsAlarmSet(false); // Reset the alarm
+      }
+    }, 1000); // Check every second
+
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  }, [isAlarmSet, alarmTime]);
 
   return (
     <div className="component-container">
-      <img
+      {/* <img
         src="https://images.unsplash.com/photo-1616620373348-205a3b1f4e4f" // Replace with your analog clock image
         alt="Analog Clock"
         className="analog-clock"
-      />
+      /> */}
       <h2>Alarm</h2>
       <div className="alarm-setting">
         <select value={hour} onChange={(e) => setHour(Number(e.target.value))}>
