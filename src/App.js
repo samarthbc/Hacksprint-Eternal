@@ -9,11 +9,8 @@ import Pomodoro from './components/Pomodoro';
 
 // Array of background image URLs
 const backgroundImages = [
-  'https://images.unsplash.com/photo-1519359644002-9c7b307b4d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE3fHxjaGVlcmZ1bHxlbnwwfHx8fDE2NzQyNjI3MjQ&ixlib=rb-4.0.3&q=80&w=1080',
-  'https://images.unsplash.com/photo-1593642632720-4b943b88b4f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fGNoZWVyZnVsJTIwYmFja2dyb3VuZHN8ZW58MHx8fHwxNjc0MjYyNzM3&ixlib=rb-4.0.3&q=80&w=1080',
-  'https://images.unsplash.com/photo-1498663987872-b16bc2ec7282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNoZWVyZnVsJTIwYmFja2dyb3VuZHN8ZW58MHx8fHwxNjc0MjYyNzQ0&ixlib=rb-4.0.3&q=80&w=1080',
-  'https://images.unsplash.com/photo-1593642632745-e4dd034e165e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDZ8fGNoZWVyZnVsJTIwYmFja2dyb3VuZHN8ZW58MHx8fHwxNjc0MjYyNzY3&ixlib=rb-4.0.3&q=80&w=1080',
-  'https://images.unsplash.com/photo-1534541941776-08f4ab4a1c4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI4fHxjaGVlcmZ1bHxlbnwwfHx8fDE2NzQyNjI3OTU&ixlib=rb-4.0.3&q=80&w=1080',
+  'https://www.freepik.com/free-photos-vectors/night-wallpaper',
+  'https://www.wallpaperflare.com/green-grass-field-under-blue-and-white-sky-during-daytime-wallpaper-40858'
 ];
 
 const App = () => {
