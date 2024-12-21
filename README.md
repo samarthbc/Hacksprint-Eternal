@@ -23,7 +23,7 @@ This is a feature-rich multipurpose digital clock application, created during a 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/unknownalien1/Hacksprint-Eternal.git
+   git clone https://github.com/samarthbc/Hacksprint-Eternal.git
    ```
 2. Navigate to the project directory:
    ```bash
